@@ -2,10 +2,13 @@
 
 {% load i18n %}
 
-{% block head_title %}{% trans "Sign Up Closed" %}{% endblock %}
+{% block head_title %}{% trans "Verify Your E-mail Address" %}{% endblock %}
 
-{% block content %}
-<h1>{% trans "Sign Up Closed" %}</h1>
+{% block inner_content %}
+    <hr>
+    <h2 class="logo-font mb-4">{% trans "Verify Your E-mail Address" %}</h2>
+    <hr>
 
-<p>{% trans "We are sorry, but the sign up is currently closed." %}</p>
+    <p>{% blocktrans %}We have sent an e-mail to you for verification. Follow the link provided to finalize the signup process. Please contact us if you do not receive it within a few minutes.{% endblocktrans %}</p>
+
 {% endblock %}
